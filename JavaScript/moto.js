@@ -16,8 +16,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var veiculo_1 = __importDefault(require("./veiculo"));
 var Moto = /** @class */ (function (_super) {
     __extends(Moto, _super);
-    function Moto() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function Moto(modelo) {
+        var _this = _super.call(this) || this;
+        _this.modelo = modelo;
+        return _this;
     }
     return Moto;
 }(veiculo_1.default));
